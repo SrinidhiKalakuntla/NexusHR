@@ -1,3 +1,5 @@
+
+
 # NexusHR
 
 A modern Human Resources Management System built with React, TypeScript, and Vite.
@@ -40,10 +42,12 @@ cp .env.example .env
 
 Available variables:
 
-| Variable | Description | Default |
-|---|---|---|
-| `VITE_API_URL` | Backend API base URL | `http://localhost:3000/api` |
-| `VITE_USE_MOCK` | Enable mock data mode | `true` |
+
+| Variable        | Description           | Default                     |
+| --------------- | --------------------- | --------------------------- |
+| `VITE_API_URL`  | Backend API base URL  | `http://localhost:3000/api` |
+| `VITE_USE_MOCK` | Enable mock data mode | `true`                      |
+
 
 ### 3. Start development server
 
@@ -69,12 +73,14 @@ npm run preview
 
 Use these credentials on the login page:
 
-| Role | Email | Password |
-|---|---|---|
-| Admin | `admin@nexushr.com` | `admin123` |
-| HR Manager | `hr@nexushr.com` | `hr123` |
-| Manager | `manager@nexushr.com` | `manager123` |
-| Employee | `employee@nexushr.com` | `employee123` |
+
+| Role       | Email                  | Password      |
+| ---------- | ---------------------- | ------------- |
+| Admin      | `admin@nexushr.com`    | `admin123`    |
+| HR Manager | `hr@nexushr.com`       | `hr123`       |
+| Manager    | `manager@nexushr.com`  | `manager123`  |
+| Employee   | `employee@nexushr.com` | `employee123` |
+
 
 ## Project Structure
 
@@ -95,12 +101,14 @@ src/
 
 ## Available Scripts
 
-| Script | Description |
-|---|---|
-| `npm run dev` | Start Vite dev server |
-| `npm run build` | Type-check and build for production |
-| `npm run preview` | Preview production build |
-| `npm run lint` | Run ESLint |
+
+| Script            | Description                         |
+| ----------------- | ----------------------------------- |
+| `npm run dev`     | Start Vite dev server               |
+| `npm run build`   | Type-check and build for production |
+| `npm run preview` | Preview production build            |
+| `npm run lint`    | Run ESLint                          |
+
 
 ## Phase 0 Status
 
@@ -119,4 +127,9 @@ See the `docs/` folder and [PROJECT_REQUIREMENTS.md](./PROJECT_REQUIREMENTS.md) 
 
 ## License
 
-Private — NexusHR internal project.
+# Private — NexusHR internal project.
+
+# NexusHR
+
+> > > > > > > 44ad305a0f8648b9f8d27f263d3a547b5ddfdb43
+
