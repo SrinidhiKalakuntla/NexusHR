@@ -11,6 +11,7 @@ export const ROUTES = {
   LOGIN: '/login',
   DASHBOARD: '/dashboard',
   EMPLOYEES: '/employees',
+  EMPLOYEE_DETAIL: '/employees/:id',
   ATTENDANCE: '/attendance',
   LEAVE: '/leave',
   PAYROLL: '/payroll',

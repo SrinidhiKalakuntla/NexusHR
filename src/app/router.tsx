@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from '@/components/layout/AppShell'
 import { DashboardPage } from '@/features/dashboard/pages/DashboardPage'
 import { LoginPage } from '@/features/auth/pages/LoginPage'
+import { EmployeeDetailPage } from '@/features/employees/pages/EmployeeDetailPage'
+import { EmployeeListPage } from '@/features/employees/pages/EmployeeListPage'
 import { ProtectedRoute, PublicRoute } from '@/routes/ProtectedRoute'
 import { ROUTES } from '@/routes/route-config'
 
@@ -26,10 +28,8 @@ export function AppRouter() {
       <Route element={<ProtectedRoute />}>
         <Route element={<AppShell />}>
           <Route path={ROUTES.DASHBOARD} element={<DashboardPage />} />
-          <Route
-            path={ROUTES.EMPLOYEES}
-            element={<PlaceholderPage title="Employee Management" />}
-          />
+          <Route path={ROUTES.EMPLOYEES} element={<EmployeeListPage />} />
+          <Route path={ROUTES.EMPLOYEE_DETAIL} element={<EmployeeDetailPage />} />
           <Route
             path={ROUTES.ATTENDANCE}
             element={<PlaceholderPage title="Attendance Management" />}
