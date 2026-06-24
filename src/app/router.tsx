@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import { AppShell } from '@/components/layout/AppShell'
 import { DashboardPage } from '@/features/dashboard/pages/DashboardPage'
 import { LoginPage } from '@/features/auth/pages/LoginPage'
+import { AttendanceDetailPage } from '@/features/attendance/pages/AttendanceDetailPage'
+import { AttendanceListPage } from '@/features/attendance/pages/AttendanceListPage'
 import { EmployeeDetailPage } from '@/features/employees/pages/EmployeeDetailPage'
 import { EmployeeListPage } from '@/features/employees/pages/EmployeeListPage'
 import { ProtectedRoute, PublicRoute } from '@/routes/ProtectedRoute'
@@ -30,42 +32,16 @@ export function AppRouter() {
           <Route path={ROUTES.DASHBOARD} element={<DashboardPage />} />
           <Route path={ROUTES.EMPLOYEES} element={<EmployeeListPage />} />
           <Route path={ROUTES.EMPLOYEE_DETAIL} element={<EmployeeDetailPage />} />
-          <Route
-            path={ROUTES.ATTENDANCE}
-            element={<PlaceholderPage title="Attendance Management" />}
-          />
-          <Route
-            path={ROUTES.LEAVE}
-            element={<PlaceholderPage title="Leave Management" />}
-          />
-          <Route
-            path={ROUTES.PAYROLL}
-            element={<PlaceholderPage title="Payroll" />}
-          />
-          <Route
-            path={ROUTES.PERFORMANCE}
-            element={<PlaceholderPage title="Performance Management" />}
-          />
-          <Route
-            path={ROUTES.RECRUITMENT}
-            element={<PlaceholderPage title="Recruitment" />}
-          />
-          <Route
-            path={ROUTES.AI_INSIGHTS}
-            element={<PlaceholderPage title="AI Insights" />}
-          />
-          <Route
-            path={ROUTES.REPORTS}
-            element={<PlaceholderPage title="Reporting" />}
-          />
-          <Route
-            path={ROUTES.NOTIFICATIONS}
-            element={<PlaceholderPage title="Notifications" />}
-          />
-          <Route
-            path={ROUTES.SETTINGS}
-            element={<PlaceholderPage title="Settings" />}
-          />
+          <Route path={ROUTES.ATTENDANCE} element={<AttendanceListPage />} />
+          <Route path={ROUTES.ATTENDANCE_DETAIL} element={<AttendanceDetailPage />} />
+          <Route path={ROUTES.LEAVE} element={<PlaceholderPage title="Leave Management" />} />
+          <Route path={ROUTES.PAYROLL} element={<PlaceholderPage title="Payroll" />} />
+          <Route path={ROUTES.PERFORMANCE} element={<PlaceholderPage title="Performance Management" />} />
+          <Route path={ROUTES.RECRUITMENT} element={<PlaceholderPage title="Recruitment" />} />
+          <Route path={ROUTES.AI_INSIGHTS} element={<PlaceholderPage title="AI Insights" />} />
+          <Route path={ROUTES.REPORTS} element={<PlaceholderPage title="Reporting" />} />
+          <Route path={ROUTES.NOTIFICATIONS} element={<PlaceholderPage title="Notifications" />} />
+          <Route path={ROUTES.SETTINGS} element={<PlaceholderPage title="Settings" />} />
         </Route>
       </Route>
 
